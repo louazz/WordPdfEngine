@@ -5,9 +5,8 @@ services:
   server:
     image: flask-server
     ports: 
-      - "8000:8000"
-    depends_on:
-      - mongo
+      - "5000:5000"
+  
   client:
     image: viteclient
     ports:
