@@ -10,4 +10,4 @@ RUN npm i -g serve
 
 EXPOSE 3000
 
-CMD ["serve","-s", "dist"]
+CMD ["serve","-p", "3000"]
