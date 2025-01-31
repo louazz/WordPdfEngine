@@ -1,0 +1,6 @@
+import requests
+
+api = "http://172.17.0.2:5000/api/document/find"
+headers = {"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczODIzNzg3NiwianRpIjoiN2JmZWNiM2MtMzBjOC00MzNjLWI1ZTItMDZmOGFkZmYzOTBkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImE2NGU4NzQ4ZTA1YjQwNzQ4OWJhMDEzOWJjNDQ4ZDM2IiwibmJmIjoxNzM4MjM3ODc2LCJjc3JmIjoiNjRiYWJmMmItYzY2Yi00YmE2LWFmODMtODIxOTRkMDVmY2M4IiwiZXhwIjoxNzM4MjM4Nzc2fQ.21KBhNfMfUZoEO0GKX9Hqx5inSs7GM_-g2XbuHHg0YI"}
+
+print(requests.get(api, headers=headers).json())
