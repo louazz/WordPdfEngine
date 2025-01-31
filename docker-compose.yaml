@@ -1,0 +1,14 @@
+version: '3'
+
+services: 
+
+  server:
+    image: flask-server
+    ports: 
+      - "8000:8000"
+    depends_on:
+      - mongo
+  client:
+    image: viteclient
+    ports:
+      - "3000:3000"
